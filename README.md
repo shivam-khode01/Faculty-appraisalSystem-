@@ -23,7 +23,7 @@ A comprehensive faculty appraisal and feedback management system built with Node
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/shivam-khode01/Faculty-appraisalSystem-.git)
    cd "New folder"
    ```
 
