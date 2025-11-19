@@ -1,0 +1,144 @@
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+  <div class="container">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand fw-bold" href="/">
+      <i class="fas fa-graduation-cap me-2"></i>
+      Faculty Management System
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <!-- Dashboard Link -->
+        <li class="nav-item">
+          <a class="nav-link fw-500" href="/admin/profiles">
+            <i class="fas fa-tachometer-alt me-2"></i>
+            Dashboard
+          </a>
+        </li>
+
+        <!-- Add Faculty Link -->
+        <li class="nav-item">
+          <a class="nav-link fw-500" href="/profile/create">
+            <i class="fas fa-user-plus me-2"></i>
+            Add Faculty
+          </a>
+        </li>
+
+        <!-- Comparison Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link fw-500" href="/admin/comparison-dashboard">
+            <i class="fas fa-chart-bar me-2"></i>
+            Comparison
+          </a>
+        </li>
+
+        <!-- Department Feedbacks -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-500" href="#" id="feedbackDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="fas fa-comments me-2"></i>
+            Feedbacks
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
+            <li><a class="dropdown-item" href="/admin/department-feedbacks">
+              <i class="fas fa-building me-2"></i>Department Feedbacks
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/admin/profiles">
+              <i class="fas fa-magic me-2"></i>Generate New Feedback
+            </a></li>
+          </ul>
+        </li>
+
+        <!-- User Profile/Settings -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-500" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="fas fa-user-circle me-2"></i>
+            Admin
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
+            <li><a class="dropdown-item" href="/admin/profiles">
+              <i class="fas fa-cog me-2"></i>Settings
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="/logout">
+              <i class="fas fa-sign-out-alt me-2"></i>Logout
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer for fixed navbar -->
+<div style="height: 80px;"></div>
+
+<style>
+  .navbar {
+    transition: all 0.3s ease;
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-link {
+    border-radius: 8px;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-item {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    margin: 0.25rem;
+    transition: all 0.2s ease;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transform: translateX(5px);
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      padding-top: 1rem;
+    }
+    
+    .nav-link {
+      margin: 0.25rem 0;
+    }
+  }
+</style>

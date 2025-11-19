@@ -1,0 +1,37 @@
+{
+  "name": "faculty-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive faculty appraisal and feedback management system with AI-powered insights",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "faculty",
+    "management",
+    "appraisal",
+    "education",
+    "feedback",
+    "AI"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dedent": "^1.6.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "googleapi": "^1.0.2",
+    "mongoose": "^8.16.0",
+    "natural": "^8.1.0",
+    "nodemon": "^3.1.10",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
